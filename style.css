@@ -1,0 +1,37 @@
+body {
+	font-family: Georgia;
+	font-size: 16px;
+	color: white;
+	font-style: italic;
+	text-align: center;
+	background-image:url("background.jpg");
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+.menü {
+	font-family: Georgia;
+	font-size: 16px;
+	font-style: italic;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.umenü{ text-decoration: none }
+.umenü:hover { text-decoration: underline }

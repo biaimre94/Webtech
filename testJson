@@ -1,0 +1,76 @@
+﻿[{
+    "Nev" : "C'Thun",
+    "Mana": "10",
+	"Kieg": "Old Gods"
+  },
+  {
+    "Nev" : "Twilight Elder",
+    "Mana": "4",
+	"Kieg": "Old Gods"
+  },
+  {
+    "Nev" : "Psych-o-Tron",
+    "Mana": "5",
+	"Kieg": "Old Gods"
+  },
+  {
+    "Nev" : "Ragnaros the firelord",
+    "Mana": "8",
+	"Kieg": "Hall of Flame"
+  },
+  {
+    "Nev" : "Azure Drake",
+    "Mana": "5",
+	"Kieg": "Hall of Flame"
+  },
+  {
+    "Nev" : "Power Overwhelming",
+    "Mana": "1",
+	"Kieg": "Hall of Flame"
+  },
+  {
+    "Nev" : "Kabal Lackey",
+    "Mana": "1",
+	"Kieg": "Gadgetzan"
+  },
+  {
+    "Nev" : "I Know a guy",
+    "Mana": "1",
+	"Kieg": "Gadgetzan"
+  },
+  {
+    "Nev" : "Jade Idol",
+    "Mana": "1",
+	"Kieg": "Gadgetzan"
+  },
+  {
+    "Nev" : "Flame Geyser",
+    "Mana": "2",
+	"Kieg": "Un'Goro"
+  },
+  {
+    "Nev" : "Mana Bind",
+    "Mana": "3",
+	"Kieg": "Un'Goro"
+  },
+  {
+    "Nev" : "Volcanosaur",
+    "Mana": "7",
+	"Kieg": "Un'Goro"
+  },
+  {
+    "Nev" : "Dr. Boom",
+    "Mana": "7",
+	"Kieg": "Golblins vs Gnomes"
+  },
+  {
+    "Nev" : "Cobra Shot",
+    "Mana": "5",
+	"Kieg": "Golblins vs Gnomes"
+  },
+  {
+    "Nev" : "Unstable Portal",
+    "Mana": "2",
+	"Kieg": "Golblins vs Gnomes"
+  }
+  ]

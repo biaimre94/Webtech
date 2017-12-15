@@ -1,0 +1,145 @@
+<html>
+    <head>
+		<link href="ico.ico" rel="shortcut icon" type="image/x-icon"> 
+        <title>
+            Biaczovszky Imre beadandó
+        </title>
+        <!-- import -->
+        <link rel="stylesheet" href="style.css" type="text/css">
+		<script src="jquery.min.js" type="text/javascript"></script>
+		<!-- Json -->
+	    <script src="testJS.js"></script>
+		<script src="valogatJS.js"></script>		
+		<!-- JQuery -->
+		<script>
+			jQuery(function () {
+				Magic = function () {
+					window.alert("Hát de!")
+				}
+			})
+		</script>
+        <script>
+            //Név + kiíratás
+            var név = prompt("Mi a neve?");
+            if (név != "" && név != " " && név != null) 
+			{
+                document.write("<font color='white'><h2>Üdvözlöm az oldalamon, "+név+"!</h2></font>");
+            }
+            else
+            {
+                document.write("<font color='white'><h2>Üdvözlöm az oldalamon, Idegen!</h2></font>");
+            }
+			
+			var dátum = Date(); 
+			
+			//HS kártyák menüpont
+            function kártyák() {
+				document.getElementById("tartalom").innerHTML = "<button onclick='readJSON()'>Kilistázás</button>"
+				document.getElementById("egyéb").innerHTML = "<button onclick='valasztJson()'>UnGoro</button>";
+            }
+			
+			//Érdekesség menüpont
+			function usb() {
+				document.getElementById("tartalom").innerHTML = "<h2>Universal Serial Bus szabványok</h2><table><tbody><tr><td><img src='usb1.jpg'</td><td style='text-align: justify;'>Az USB (Universal Serial Bus) egy csatlakozási megoldás, amelynek sikertörténete 1996-ig"+
+				"vezethetõ vissza. Az elsõ 1.0 verzió központosított specifikációja bár nem terjed el néhány hibás rész miatt, viszont az 1.1 igazi sikert aratott."+
+				"Az elterjedésének egyik legfõbb indoka a sokrétû felhasználhatóság, könnyen képes adatkapcsolatot létesíteni a különbözõ eszközök között"+
+				" (pl.: nyomtató, merevlemez, telefon, stb.). A mindenki által ismert „Type A” a számítógépek elterjed USB csatlakozója, aminek formája nem "+
+				"változott a típusszámok növekedésével. Említésre méltó még a „Type B” amit általában nyomtatók csatlakozójaként ismerhettünk meg. A mobiloknál"+
+				" és fényképezõgépeknél régebben elterjed „mini USB” robosztus külsejérõl ismerhetõ fel, de mára felváltotta a szabványos és egységes „micro USB” vékonyabb kialakítása."+
+				"1998-as megjelenésû USB 1.1 az akkori követelményeknek maradéktalanul megfelelõ maximum 12 Mbit/s sebességre volt képes."+
+				" Az adatállományok növekedésével szükségessé vált egy gyorsabb adatkapcsolatot biztosító szabvány, amely 2000-ben USB 2.0 néven jelent meg. Névleges maximális"+
+				" teljesítményével 480 Mbit/s negyvenszer gyorsabb adatmásolást tett lehetõvé. A digitális korban a fényképek, filmek és különbözõ adatok másolására megfelelt,"+
+				" ráadásul kompatibilis maradt a korábbi verzióval – azaz az USB 1.1 és USB 2.0 oda-vissza használható."+
+				" Közel 8 évet kellett várni egy újabb szabvány véglegesítéséhez, mivel a felhasználó igények lényegesen megnõttek. Az adatállományok párszáz megabájtról"+
+				" több gigabájtra gyarapodtak, a korábbi csúcsteljesítmény elavulttá vált. A HD filmek korában már elképzelhetetlen a régi szabvány,"+
+				" a 2008-as megjelenésû USB 3.0 hihetetlen 5 Gbit/s névleges maximális sebességre képes, ami közel tízszeres növekedést jelent."+
+				" A kompatibilitás továbbra is megmaradt azaz a régi szabványok az újjal is mûködnek, mint ahogyan az új a régiekkel. Nem kötelezõ, de általában"+
+				" kék színnel jelölik az új szabványnak megfelelõ USB-t. A szemléltetés érdekében egy DVD (4.7 GB) méret átmásolásának ideje a különbözõ típusok"+
+				"szerint:</td><td><img src='usb2.png'</td></tr></tbody></table>"
+				document.getElementById("egyéb").innerHTML = "<table><tbody><tr><td>- USB 1.1 – 3209 másodperc</td></tr><tr><td>- USB 2.0 – 80 másodperc</td></tr><tr><td>- USB 3.0 – 8 másodperc</td></tr></tbody></table>"
+			}
+			
+            //Gondoltam egy számra menüpont
+            function kérdés() {
+                document.getElementById("tartalom").innerHTML = "Gondoltam egy számot 0 és 10 között. Kérem a tippet! <br><br> "+
+                "<input type='text' id='tipp'> <button onclick='tipp();'>Tipp</button>";
+                document.getElementById("egyéb").innerHTML = "";
+            }
+            //Hearthstone menüpont
+            function hs() {
+                document.getElementById("tartalom").innerHTML = "A Hearthstone egy ingyenes játszható kártyajáték, jelenleg elérhetõ PC-re, "+
+				"MAC-re, és iPad-re, hamarosan elérhetõvé fog válni Android-ra és iPhone-ra is. A játékosoknak 9 féle hõsbõl kell egyet választani,"+ 
+				"majd a harctéren ketten megküzdenek. A két szembenálló játékosnak van egy-egy harminc lapot számláló paklija, ezekbõl húznak a játék "+ 
+				"elején 3-3 lapot, a második játékos húzhat még egy lapot, és kap egy bónusz kártyát, a The Coin-t. Ezután minden körben húznak egy "+ 
+				"lapot, továbbá eggyel több manájuk lesz, amíg el nem érik a 10 maná-t. A cél az ellenfél hõsének mind a harminc életpontjának a "+ 
+				"lesebzése a különbözõ lények, spell-ek és fegyverek segítségével."+
+                "<br> <a target='blank' href='http://hearthstonehungary.hu/wiki/newcomers'>További információk</a>"
+                document.getElementById("egyéb").innerHTML = "<a target='blank' href='http://playhearthstone.com'>"+
+                "<img src='hs.png' width='75%'/></a> <iframe width='75%' height='520' src='http://www.youtube.com/embed/vPguoeYTvMI'"+
+                "frameborder='0'></iframe>";
+            }
+			//Neo befenyít
+			var nyomdb = 1;
+			function neo(){
+				if (nyomdb == 4){ document.getElementById("egyéb").innerHTML = "<img src='Neo.jpg' width='25%'>"
+					nyomdb = 1;
+				}
+				nyomdb=nyomdb+1;
+			}
+            //Stílus menüpont
+            function stílus() {
+                document.getElementById("tartalom").innerHTML = "<h2 id='stílus' onmouseover= 'színez();' onmouseout= 'színez2();'>"+
+                "Fehér vagy Arany?</h2>";
+                document.getElementById("egyéb").innerHTML = "<button onclick='neo()'>Nyomd meg párszor ha mered :P</button>"
+            }
+            //Stílus színez aranyra func
+            function színez() {
+				document.getElementById("stílus").style.color = "gold";
+			}
+            //Stílus vissza feketére func
+            function színez2() {
+				document.getElementById("stílus").style.color = "white";
+            }
+            //Gondoltam egy számra func
+            function tipp() {
+                var tipp = document.getElementById("tipp").value;
+                var sorsol = Math.round(Math.random()*10);
+				if(tipp < 0 || tipp > 10 || tipp == "") document.getElementById("egyéb").innerHTML = "0 és 10 közötti értéket adj meg!";
+					else if(isNaN(tipp) == true || tipp == " ") document.getElementById("egyéb").innerHTML = "Számot adj meg!";
+						else if(tipp == sorsol) document.getElementById("egyéb").innerHTML = "Talált!";
+							else document.getElementById("egyéb").innerHTML = "Nem talált! A gondolt szám: "+sorsol;
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Menü -->
+        <div class="menü">
+		<fieldset>
+            <legend>Menü</legend>
+			<span class="umenü" onmouseover="this.style.cursor='pointer'" onclick="kártyák();">HS kártyalapok</span> -
+			<span class="umenü" onmouseover="this.style.cursor='pointer'" onclick="usb();">Érdekesség</span> -
+            <span class="umenü" onmouseover="this.style.cursor='pointer'" onclick="kérdés();">Találós kérdés</span> -
+            <span class="umenü" onmouseover="this.style.cursor='pointer'" onclick="hs();">Hearthstone</span> -
+            <span class="umenü" onmouseover="this.style.cursor='pointer'" onclick="stílus();">JavaScript Stílus</span>
+		</fieldset>	
+        </div>
+		<br>
+		<button onclick="Magic()">Mi ez? Csak nem JQuery?</button>
+        <br><small><small>&nbsp;</small></small><hr><br>
+		<!--úszó gomb-->
+		<a href="#" class="float"><img src="fel.png"/>
+		</a>
+		<center>
+        <p id="tartalom"/>
+        <p id="egyéb"/>
+		<p id="dátum">
+		<br>
+		<hr>
+		<h3>Belépés idõpontja:</h3>
+		<h4><script>
+			document.write(dátum);
+		</script></h4>
+		</p>
+		</center>
+    </body>
+</html>
